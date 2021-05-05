@@ -10,6 +10,7 @@ export default function List({ title, deleteList }) {
         newTasks.push(task);
 
         setTasks(newTasks);
+        setTask('');
     };
 
     const deleteTask = (index) => {

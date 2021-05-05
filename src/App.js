@@ -10,6 +10,7 @@ export default function App() {
         newList.push({ title, List });
 
         setLists(newList);
+        setTitle('');
     };
     const deleteList = (index) => {
         let deleteList = [...lists];
@@ -39,7 +40,6 @@ export default function App() {
                     }}
                 ></input>
                 <button className='btn btn-info' onClick={addList}>
-                    {' '}
                     Agregar Lista
                 </button>
             </div>
